@@ -2,7 +2,7 @@ name_hash = {:blake => 500, :ashley => 2, :adam => 1}
 
 def key_for_min_value(name_hash)
   smallest_name = nil
-  smallest = 1000000
+  smallest = 1000
   
   name_hash.each do |key, value|
    if value <= smallest
