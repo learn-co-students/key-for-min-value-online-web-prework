@@ -7,6 +7,7 @@ if name_hash == {}
      return nil
 else name_hash1 = name_hash.sort_by{|k, v| v}
 
- name_hash1[0]
+ hash2=name_hash1[0]
+ hash2 [0]
  end
 end
