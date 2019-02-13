@@ -40,7 +40,7 @@ describe "smallest hash value" do
     key_for_min_value(hash)
   end
 
-  it "returns the key of the smallest hash value" do
+it "returns the key of the smallest hash value" do
     expect(key_for_min_value({:blake => 500, :ashley => 2, :adam => 1})).to eq(:adam)
   end
 
