@@ -12,7 +12,7 @@ end
 
 def hash_min(hash)
  lowest_number = nil 
- lowest_key = nil
+ lowest_key = ""
  hash.each do |item, num|
   if lowest_number == nil || num < lowest_number
     lowest_number = num
