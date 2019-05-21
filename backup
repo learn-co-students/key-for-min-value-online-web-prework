@@ -4,14 +4,11 @@
 def key_for_min_value(name_hash)
   hashKey = 100000
   something = nil
-  key_array = name_hash.collect do |starter, pack|
-    pack
-  end
-  key_array.each do |item|
-    if hashKey > item
-      hashKey = item 
+  name_hash.collect do |starter, pack|
+    if hashKey >= pack
+      something = starter
     end
   end
-  name_hash.index(hashKey)
+  return something
   
 end
